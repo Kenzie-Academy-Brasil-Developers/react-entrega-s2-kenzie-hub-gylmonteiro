@@ -7,9 +7,6 @@ import { useState } from "react";
 import "./styles.css";
 
 const Techs = ({ token, user }) => {
-  //   const history = useHistory({});
-  //   const sendTo = (user) => history.push(`/`);
-
   const formSchema = yup.object().shape({
     title: yup.string().required("Your title must have a name."),
     status: yup.string().required("You must inform your status level at it."),
@@ -20,10 +17,6 @@ const Techs = ({ token, user }) => {
     handleSubmit,
     formState: { errors },
   } = useForm({ resolver: yupResolver(formSchema) });
-
-  //   const [token, setToken] = useState(
-  //     JSON.parse(localStorage.getItem("token")) || ""
-  //   );
 
   const handleForm = (data) => {
     axios
@@ -62,7 +55,7 @@ const Techs = ({ token, user }) => {
         <form className="form_create_techs" onSubmit={handleSubmit(handleForm)}>
           <div>
             <TextField
-              label="Title"
+              label="Título"
               margin="normal"
               variant="outlined"
               size="small"
@@ -97,10 +90,10 @@ const Techs = ({ token, user }) => {
               type="submit"
               variant="contained"
             >
-              Show Techs
+              Mostrar Techs
             </Button>
             <Button color="primary" type="submit" variant="contained">
-              Submit
+              Cadastrar
             </Button>
           </div>
         </form>

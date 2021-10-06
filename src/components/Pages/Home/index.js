@@ -22,7 +22,7 @@ const Home = ({ isLoggedIn }) => {
     <>
       {isLoggedIn && (
         <div>
-          <h2> - Bem vindo(a), {user.name}!</h2>
+          <h2> - Seja Bem vindo(a), {user.name}!</h2>
           <Techs token={token} user={user} />
         </div>
       )}

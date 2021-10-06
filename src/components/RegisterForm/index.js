@@ -21,7 +21,7 @@ const RegisterForm = () => {
       .min(5, "Min 5 characters")
       .matches(
         "^[a-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÊÍÏÓÒÖÚÇÑ ]+$",
-        "Can contain just small cap letters"
+        "Somente letras mínusculas e sem espaços"
       ),
     password: yup
       .string()
@@ -67,7 +67,7 @@ const RegisterForm = () => {
           </div>
           <div>
             <TextField
-              label="Name"
+              label="Nome de usuário"
               margin="normal"
               variant="outlined"
               size="small"
@@ -79,7 +79,7 @@ const RegisterForm = () => {
           </div>
           <div>
             <TextField
-              label="Password"
+              label="Senha"
               margin="normal"
               variant="outlined"
               size="small"
@@ -103,7 +103,7 @@ const RegisterForm = () => {
           </div>
           <div>
             <TextField
-              label="Contact"
+              label="Contato"
               margin="normal"
               variant="outlined"
               size="small"
@@ -117,7 +117,7 @@ const RegisterForm = () => {
           <div>
             <TextField
               id="select"
-              label="Course module"
+              label="Módulo do Curso"
               margin="normal"
               variant="outlined"
               size="small"
@@ -127,15 +127,15 @@ const RegisterForm = () => {
               helperText={errors.course_module?.message}
               select
             >
-              <MenuItem value="1º_Module">1º module</MenuItem>
-              <MenuItem value="2º_Module">2º module</MenuItem>
-              <MenuItem value="3º_Module">3º module</MenuItem>
-              <MenuItem value="4º_Module">4º module</MenuItem>
+              <MenuItem value="1º_Module">1º Módulo</MenuItem>
+              <MenuItem value="2º_Module">2º Módulo</MenuItem>
+              <MenuItem value="3º_Module">3º Módulo</MenuItem>
+              <MenuItem value="4º_Module">4º Módulo</MenuItem>
             </TextField>
           </div>
           <div>
             <Button color="primary" type="submit" variant="contained">
-              Submit
+              Cadastrar
             </Button>
           </div>
         </form>
