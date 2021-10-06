@@ -63,7 +63,7 @@ const Landing = ({ setIsLoggedIn }) => {
 
         <div>
           <TextField
-            label="Password"
+            label="Senha"
             margin="normal"
             variant="outlined"
             size="small"
@@ -75,7 +75,7 @@ const Landing = ({ setIsLoggedIn }) => {
         </div>
         <div>
           <Button color="primary" type="submit" variant="contained">
-            Submit
+            Entrar
           </Button>
         </div>
       </form>
